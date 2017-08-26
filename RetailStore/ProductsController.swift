@@ -13,7 +13,7 @@ class ProductsController: UITableViewController {
 
     // MARK: private methods 
     private func registerNibs() {
-        tableView.register(UINib(nibName: "ProductSummaryCell", bundle: Bundle.main), forCellReuseIdentifier: "ProductSummaryCell")
+        tableView.registerNibWithName(String(describing: ProductSummaryCell.self))
     }
 
     // MARK: - Table view data source
@@ -23,13 +23,15 @@ class ProductsController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return 50
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "ProductSummaryCell", for: indexPath)
+        let reusableIdentifier = String(describing: ProductSummaryCell.self)
+        let cell = tableView.dequeueReusableCell(withIdentifier: reusableIdentifier , for: indexPath)
+        
         if let productCell = cell as? ProductSummaryCell {
-            productCell.fill(productName: "Product1")
+            productCell.fill(productName: "Product " + String(indexPath.row))
         }
         return cell
     }

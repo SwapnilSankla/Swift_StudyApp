@@ -14,6 +14,7 @@
 		A596A7E91F51BE9700FEA926 /* Products.xib in Resources */ = {isa = PBXBuildFile; fileRef = A596A7E71F51BE9700FEA926 /* Products.xib */; };
 		A596A7EC1F51C06500FEA926 /* ProductSummaryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A596A7EA1F51C06500FEA926 /* ProductSummaryCell.swift */; };
 		A596A7ED1F51C06500FEA926 /* ProductSummaryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A596A7EB1F51C06500FEA926 /* ProductSummaryCell.xib */; };
+		A596A7F21F51C45F00FEA926 /* UITableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A596A7F11F51C45F00FEA926 /* UITableViewExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		A596A7E71F51BE9700FEA926 /* Products.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Products.xib; sourceTree = "<group>"; };
 		A596A7EA1F51C06500FEA926 /* ProductSummaryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductSummaryCell.swift; sourceTree = "<group>"; };
 		A596A7EB1F51C06500FEA926 /* ProductSummaryCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProductSummaryCell.xib; sourceTree = "<group>"; };
+		A596A7F11F51C45F00FEA926 /* UITableViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableViewExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 		A596A7C51F51BCF900FEA926 /* RetailStore */ = {
 			isa = PBXGroup;
 			children = (
+				A596A7F01F51C44F00FEA926 /* extensions */,
 				A596A7C61F51BCF900FEA926 /* AppDelegate.swift */,
 				A596A7CD1F51BCF900FEA926 /* Assets.xcassets */,
 				A596A7D21F51BCF900FEA926 /* Info.plist */,
@@ -113,6 +116,14 @@
 				A596A7E61F51BE9700FEA926 /* ProductsController.swift */,
 			);
 			name = controllers;
+			sourceTree = "<group>";
+		};
+		A596A7F01F51C44F00FEA926 /* extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A596A7F11F51C45F00FEA926 /* UITableViewExtension.swift */,
+			);
+			name = extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -221,6 +232,7 @@
 				A596A7EC1F51C06500FEA926 /* ProductSummaryCell.swift in Sources */,
 				A596A7C71F51BCF900FEA926 /* AppDelegate.swift in Sources */,
 				A596A7E81F51BE9700FEA926 /* ProductsController.swift in Sources */,
+				A596A7F21F51C45F00FEA926 /* UITableViewExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
