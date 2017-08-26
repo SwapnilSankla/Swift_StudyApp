@@ -16,6 +16,7 @@
 		A596A7ED1F51C06500FEA926 /* ProductSummaryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A596A7EB1F51C06500FEA926 /* ProductSummaryCell.xib */; };
 		A596A7F21F51C45F00FEA926 /* UITableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A596A7F11F51C45F00FEA926 /* UITableViewExtension.swift */; };
 		A596A7F81F51DAC100FEA926 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A596A7F71F51DAC100FEA926 /* Launch Screen.storyboard */; };
+		A596A7FB1F51DDF200FEA926 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = A596A7FA1F51DDF200FEA926 /* Product.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,7 @@
 		A596A7EB1F51C06500FEA926 /* ProductSummaryCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProductSummaryCell.xib; sourceTree = "<group>"; };
 		A596A7F11F51C45F00FEA926 /* UITableViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableViewExtension.swift; sourceTree = "<group>"; };
 		A596A7F71F51DAC100FEA926 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = SOURCE_ROOT; };
+		A596A7FA1F51DDF200FEA926 /* Product.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 		A596A7C51F51BCF900FEA926 /* RetailStore */ = {
 			isa = PBXGroup;
 			children = (
+				A596A7F91F51DDE000FEA926 /* model */,
 				A596A7F71F51DAC100FEA926 /* Launch Screen.storyboard */,
 				A596A7F01F51C44F00FEA926 /* extensions */,
 				A596A7C61F51BCF900FEA926 /* AppDelegate.swift */,
@@ -127,6 +130,14 @@
 				A596A7F11F51C45F00FEA926 /* UITableViewExtension.swift */,
 			);
 			name = extensions;
+			sourceTree = "<group>";
+		};
+		A596A7F91F51DDE000FEA926 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				A596A7FA1F51DDF200FEA926 /* Product.swift */,
+			);
+			name = model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,6 +246,7 @@
 			files = (
 				A596A7EC1F51C06500FEA926 /* ProductSummaryCell.swift in Sources */,
 				A596A7C71F51BCF900FEA926 /* AppDelegate.swift in Sources */,
+				A596A7FB1F51DDF200FEA926 /* Product.swift in Sources */,
 				A596A7E81F51BE9700FEA926 /* ProductsController.swift in Sources */,
 				A596A7F21F51C45F00FEA926 /* UITableViewExtension.swift in Sources */,
 			);

@@ -1,10 +1,13 @@
 import UIKit
 
 class ProductsController: UITableViewController {
-        
+
+    var products: [Product]?
+
     override func viewDidLoad() {
         super.viewDidLoad()
         registerNibs()
+        createDummyProducts()
     }
 
     override func didReceiveMemoryWarning() {
@@ -16,12 +19,22 @@ class ProductsController: UITableViewController {
         tableView.registerNibWithName(String(describing: ProductSummaryCell.self))
     }
 
+    private func createDummyProducts() {
+        products = [Product]()
+        for index in 0...51 {
+            let product = Product(name: "Product " + String(index))
+            products?.append(product)
+        }
+    }
+
     // MARK: - Table view delegate
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let message = "Hello"
-        let popupController = UIAlertController(title: "Selection", message: message, preferredStyle: .alert)
-        popupController.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
-        present(popupController, animated: false)
+        if let product = products?[indexPath.row] {
+            let message = "You have selected \(product.name)"
+            let popupController = UIAlertController(title: "Selection", message: message, preferredStyle: .alert)
+            popupController.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
+            present(popupController, animated: false)
+        }
     }
 
     // MARK: - Table view data source
@@ -31,15 +44,16 @@ class ProductsController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 50
+        return products?.count ?? 0
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let reusableIdentifier = String(describing: ProductSummaryCell.self)
         let cell = tableView.dequeueReusableCell(withIdentifier: reusableIdentifier , for: indexPath)
         
-        if let productCell = cell as? ProductSummaryCell {
-            productCell.fill(productName: "Product " + String(indexPath.row))
+        if let productCell = cell as? ProductSummaryCell,
+           let productName = products?[indexPath.row].name {
+            productCell.fill(productName: productName)
         }
         return cell
     }
