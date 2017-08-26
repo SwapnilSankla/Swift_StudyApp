@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		A596A7C71F51BCF900FEA926 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A596A7C61F51BCF900FEA926 /* AppDelegate.swift */; };
 		A596A7CE1F51BCF900FEA926 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A596A7CD1F51BCF900FEA926 /* Assets.xcassets */; };
-		A596A7DC1F51BCF900FEA926 /* RetailStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A596A7DB1F51BCF900FEA926 /* RetailStoreTests.swift */; };
 		A596A7E81F51BE9700FEA926 /* ProductsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A596A7E61F51BE9700FEA926 /* ProductsController.swift */; };
 		A596A7E91F51BE9700FEA926 /* Products.xib in Resources */ = {isa = PBXBuildFile; fileRef = A596A7E71F51BE9700FEA926 /* Products.xib */; };
 		A596A7EC1F51C06500FEA926 /* ProductSummaryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A596A7EA1F51C06500FEA926 /* ProductSummaryCell.swift */; };
@@ -17,6 +16,8 @@
 		A596A7F21F51C45F00FEA926 /* UITableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A596A7F11F51C45F00FEA926 /* UITableViewExtension.swift */; };
 		A596A7F81F51DAC100FEA926 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A596A7F71F51DAC100FEA926 /* Launch Screen.storyboard */; };
 		A596A7FB1F51DDF200FEA926 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = A596A7FA1F51DDF200FEA926 /* Product.swift */; };
+		A596A8011F51E25500FEA926 /* Either.swift in Sources */ = {isa = PBXBuildFile; fileRef = A596A8001F51E25500FEA926 /* Either.swift */; };
+		A596A8091F51E7FC00FEA926 /* EitherSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A596A8081F51E7FC00FEA926 /* EitherSpec.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,7 +36,6 @@
 		A596A7CD1F51BCF900FEA926 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A596A7D21F51BCF900FEA926 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A596A7D71F51BCF900FEA926 /* RetailStoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RetailStoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A596A7DB1F51BCF900FEA926 /* RetailStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetailStoreTests.swift; sourceTree = "<group>"; };
 		A596A7DD1F51BCF900FEA926 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A596A7E61F51BE9700FEA926 /* ProductsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductsController.swift; sourceTree = "<group>"; };
 		A596A7E71F51BE9700FEA926 /* Products.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Products.xib; sourceTree = "<group>"; };
@@ -44,6 +44,8 @@
 		A596A7F11F51C45F00FEA926 /* UITableViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableViewExtension.swift; sourceTree = "<group>"; };
 		A596A7F71F51DAC100FEA926 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = SOURCE_ROOT; };
 		A596A7FA1F51DDF200FEA926 /* Product.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		A596A8001F51E25500FEA926 /* Either.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Either.swift; sourceTree = "<group>"; };
+		A596A8081F51E7FC00FEA926 /* EitherSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EitherSpec.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 		A596A7C51F51BCF900FEA926 /* RetailStore */ = {
 			isa = PBXGroup;
 			children = (
+				A596A7FF1F51E24B00FEA926 /* core */,
 				A596A7F91F51DDE000FEA926 /* model */,
 				A596A7F71F51DAC100FEA926 /* Launch Screen.storyboard */,
 				A596A7F01F51C44F00FEA926 /* extension */,
@@ -100,8 +103,8 @@
 		A596A7DA1F51BCF900FEA926 /* RetailStoreTests */ = {
 			isa = PBXGroup;
 			children = (
-				A596A7DB1F51BCF900FEA926 /* RetailStoreTests.swift */,
 				A596A7DD1F51BCF900FEA926 /* Info.plist */,
+				A596A80A1F51E91300FEA926 /* core */,
 			);
 			path = RetailStoreTests;
 			sourceTree = "<group>";
@@ -138,6 +141,22 @@
 				A596A7FA1F51DDF200FEA926 /* Product.swift */,
 			);
 			name = model;
+			sourceTree = "<group>";
+		};
+		A596A7FF1F51E24B00FEA926 /* core */ = {
+			isa = PBXGroup;
+			children = (
+				A596A8001F51E25500FEA926 /* Either.swift */,
+			);
+			name = core;
+			sourceTree = "<group>";
+		};
+		A596A80A1F51E91300FEA926 /* core */ = {
+			isa = PBXGroup;
+			children = (
+				A596A8081F51E7FC00FEA926 /* EitherSpec.swift */,
+			);
+			name = core;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,6 +213,7 @@
 					};
 					A596A7D61F51BCF900FEA926 = {
 						CreatedOnToolsVersion = 8.3.3;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 						TestTargetID = A596A7C21F51BCF900FEA926;
 					};
@@ -244,6 +264,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A596A8011F51E25500FEA926 /* Either.swift in Sources */,
 				A596A7EC1F51C06500FEA926 /* ProductSummaryCell.swift in Sources */,
 				A596A7C71F51BCF900FEA926 /* AppDelegate.swift in Sources */,
 				A596A7FB1F51DDF200FEA926 /* Product.swift in Sources */,
@@ -256,7 +277,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A596A7DC1F51BCF900FEA926 /* RetailStoreTests.swift in Sources */,
+				A596A8091F51E7FC00FEA926 /* EitherSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -395,10 +416,12 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = RetailStoreTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = sankla.swapnil.RetailStoreTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RetailStore.app/RetailStore";
 			};
@@ -409,6 +432,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = RetailStoreTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = sankla.swapnil.RetailStoreTests;
