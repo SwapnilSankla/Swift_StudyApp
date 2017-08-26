@@ -87,12 +87,12 @@
 			children = (
 				A596A7F91F51DDE000FEA926 /* model */,
 				A596A7F71F51DAC100FEA926 /* Launch Screen.storyboard */,
-				A596A7F01F51C44F00FEA926 /* extensions */,
+				A596A7F01F51C44F00FEA926 /* extension */,
 				A596A7C61F51BCF900FEA926 /* AppDelegate.swift */,
 				A596A7CD1F51BCF900FEA926 /* Assets.xcassets */,
 				A596A7D21F51BCF900FEA926 /* Info.plist */,
-				A596A7EF1F51C3BA00FEA926 /* controllers */,
-				A596A7EE1F51C3AE00FEA926 /* views */,
+				A596A7EF1F51C3BA00FEA926 /* controller */,
+				A596A7EE1F51C3AE00FEA926 /* view */,
 			);
 			path = RetailStore;
 			sourceTree = "<group>";
@@ -106,30 +106,30 @@
 			path = RetailStoreTests;
 			sourceTree = "<group>";
 		};
-		A596A7EE1F51C3AE00FEA926 /* views */ = {
+		A596A7EE1F51C3AE00FEA926 /* view */ = {
 			isa = PBXGroup;
 			children = (
 				A596A7EA1F51C06500FEA926 /* ProductSummaryCell.swift */,
 				A596A7EB1F51C06500FEA926 /* ProductSummaryCell.xib */,
 				A596A7E71F51BE9700FEA926 /* Products.xib */,
 			);
-			name = views;
+			name = view;
 			sourceTree = "<group>";
 		};
-		A596A7EF1F51C3BA00FEA926 /* controllers */ = {
+		A596A7EF1F51C3BA00FEA926 /* controller */ = {
 			isa = PBXGroup;
 			children = (
 				A596A7E61F51BE9700FEA926 /* ProductsController.swift */,
 			);
-			name = controllers;
+			name = controller;
 			sourceTree = "<group>";
 		};
-		A596A7F01F51C44F00FEA926 /* extensions */ = {
+		A596A7F01F51C44F00FEA926 /* extension */ = {
 			isa = PBXGroup;
 			children = (
 				A596A7F11F51C45F00FEA926 /* UITableViewExtension.swift */,
 			);
-			name = extensions;
+			name = extension;
 			sourceTree = "<group>";
 		};
 		A596A7F91F51DDE000FEA926 /* model */ = {
