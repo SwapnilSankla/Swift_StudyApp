@@ -16,6 +16,14 @@ class ProductsController: UITableViewController {
         tableView.registerNibWithName(String(describing: ProductSummaryCell.self))
     }
 
+    // MARK: - Table view delegate
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let message = "Hello"
+        let popupController = UIAlertController(title: "Selection", message: message, preferredStyle: .alert)
+        popupController.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
+        present(popupController, animated: false)
+    }
+
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
