@@ -49,8 +49,7 @@ class ProductsController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let reusableIdentifier = String(describing: ProductSummaryCell.self)
-        let cell = tableView.dequeueReusableCell(withIdentifier: reusableIdentifier , for: indexPath)
-        
+        let cell = tableView.dequeueReusableCell(withIdentifier: reusableIdentifier, for: indexPath)
         if let productCell = cell as? ProductSummaryCell,
            let productName = products?[indexPath.row].name {
             productCell.fill(productName: productName)

@@ -51,6 +51,7 @@ enum Either<T1, T2> {
         }
     }
 
+    //swiftlint:disable:next identifier_name
     private func mapLeft(f: (T1) -> T1) -> Either<T1, T2> {
         switch self {
         case .left(let t): return Either<T1, T2>.left(f(t))
@@ -58,6 +59,7 @@ enum Either<T1, T2> {
         }
     }
 
+    //swiftlint:disable:next identifier_name
     private func mapRight(f: (T2) -> T2) -> Either<T1, T2> {
         switch self {
         case .left(let t): return Either<T1, T2>.left(t)

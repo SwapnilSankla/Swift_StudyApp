@@ -169,6 +169,7 @@
 				A596A7BF1F51BCF900FEA926 /* Sources */,
 				A596A7C01F51BCF900FEA926 /* Frameworks */,
 				A596A7C11F51BCF900FEA926 /* Resources */,
+				A55FC6C01F695E270046D167 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -258,6 +259,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A55FC6C01F695E270046D167 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint\nelse\n    echo 'Please install swiftlint'\nfi";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A596A7BF1F51BCF900FEA926 /* Sources */ = {
