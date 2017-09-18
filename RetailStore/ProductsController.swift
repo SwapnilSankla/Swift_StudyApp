@@ -20,10 +20,10 @@ class ProductsController: UITableViewController {
     }
 
     private func createDummyProducts() {
-        products = [Product]()
-        for index in 0...51 {
-            let product = Product(name: "Product " + String(index))
-            products?.append(product)
+        let serviceResponse = ProductService.fetchProducts()
+        switch serviceResponse {
+        case .left(let products): self.products = products
+        case _: break
         }
     }
 

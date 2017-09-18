@@ -18,6 +18,8 @@
 		A596A7FB1F51DDF200FEA926 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = A596A7FA1F51DDF200FEA926 /* Product.swift */; };
 		A596A8011F51E25500FEA926 /* Either.swift in Sources */ = {isa = PBXBuildFile; fileRef = A596A8001F51E25500FEA926 /* Either.swift */; };
 		A596A8091F51E7FC00FEA926 /* EitherSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A596A8081F51E7FC00FEA926 /* EitherSpec.swift */; };
+		A5E049531F6FA9EC00C355E1 /* ProductService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E049521F6FA9EC00C355E1 /* ProductService.swift */; };
+		A5E049561F6FAA2100C355E1 /* ProductServiceSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E049551F6FAA2100C355E1 /* ProductServiceSpec.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +48,8 @@
 		A596A7FA1F51DDF200FEA926 /* Product.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		A596A8001F51E25500FEA926 /* Either.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Either.swift; sourceTree = "<group>"; };
 		A596A8081F51E7FC00FEA926 /* EitherSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EitherSpec.swift; sourceTree = "<group>"; };
+		A5E049521F6FA9EC00C355E1 /* ProductService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductService.swift; sourceTree = "<group>"; };
+		A5E049551F6FAA2100C355E1 /* ProductServiceSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductServiceSpec.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +91,7 @@
 		A596A7C51F51BCF900FEA926 /* RetailStore */ = {
 			isa = PBXGroup;
 			children = (
+				A5E049541F6FA9F900C355E1 /* service */,
 				A596A7FF1F51E24B00FEA926 /* core */,
 				A596A7F91F51DDE000FEA926 /* model */,
 				A596A7F71F51DAC100FEA926 /* Launch Screen.storyboard */,
@@ -103,6 +108,7 @@
 		A596A7DA1F51BCF900FEA926 /* RetailStoreTests */ = {
 			isa = PBXGroup;
 			children = (
+				A5E049571F6FAA2400C355E1 /* service */,
 				A596A7DD1F51BCF900FEA926 /* Info.plist */,
 				A596A80A1F51E91300FEA926 /* core */,
 			);
@@ -159,6 +165,22 @@
 			name = core;
 			sourceTree = "<group>";
 		};
+		A5E049541F6FA9F900C355E1 /* service */ = {
+			isa = PBXGroup;
+			children = (
+				A5E049521F6FA9EC00C355E1 /* ProductService.swift */,
+			);
+			name = service;
+			sourceTree = "<group>";
+		};
+		A5E049571F6FAA2400C355E1 /* service */ = {
+			isa = PBXGroup;
+			children = (
+				A5E049551F6FAA2100C355E1 /* ProductServiceSpec.swift */,
+			);
+			name = service;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -210,6 +232,7 @@
 				TargetAttributes = {
 					A596A7C21F51BCF900FEA926 = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 6JN97A7TTS;
 						ProvisioningStyle = Automatic;
 					};
 					A596A7D61F51BCF900FEA926 = {
@@ -286,6 +309,7 @@
 				A596A7C71F51BCF900FEA926 /* AppDelegate.swift in Sources */,
 				A596A7FB1F51DDF200FEA926 /* Product.swift in Sources */,
 				A596A7E81F51BE9700FEA926 /* ProductsController.swift in Sources */,
+				A5E049531F6FA9EC00C355E1 /* ProductService.swift in Sources */,
 				A596A7F21F51C45F00FEA926 /* UITableViewExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -294,6 +318,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5E049561F6FAA2100C355E1 /* ProductServiceSpec.swift in Sources */,
 				A596A8091F51E7FC00FEA926 /* EitherSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -408,6 +433,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 6JN97A7TTS;
 				INFOPLIST_FILE = RetailStore/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = sankla.swapnil.RetailStore;
@@ -420,6 +446,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 6JN97A7TTS;
 				INFOPLIST_FILE = RetailStore/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = sankla.swapnil.RetailStore;
